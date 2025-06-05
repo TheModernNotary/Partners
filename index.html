@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Modern Notary Partner Application</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    .logo {
+      display: block;
+      margin: 0 auto 20px;
+      max-width: 60px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: center;
+    }
+    button {
+      background: #000;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      margin-top: 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+    .terms {
+      font-size: 0.9em;
+      background: #f2f2f2;
+      padding: 15px;
+      margin-top: 30px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" alt="The Modern Notary Logo" class="logo">
+    <h1>The Modern Notary</h1>
+    <h2>Partner Application</h2>
+    <form action="https://formsubmit.co/partners@themodernnotary.onmicrosoft.com" method="POST">
+      <input type="hidden" name="_next" value="https://themodernnotary.github.io/Partners/thank-you.html">
+      <label for="fullName">Full Name</label>
+      <input type="text" id="fullName" name="Full Name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="Email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="Phone Number" required>
+
+      <label for="address">City and Zip Code</label>
+      <input type="text" id="address" name="City and Zip Code" required>
+
+      <label for="experience">Do you currently hold a Colorado Notary Public commission?</label>
+      <select id="experience" name="Current Notary Public" required>
+        <option value="">-- Please Select --</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+
+      
+<h3>Availability</h3>
+<p>Please check all time blocks you are generally available for each day:</p>
+<table style="width:100%; border-collapse: collapse; margin-bottom: 20px;">
+  <thead>
+    <tr>
+      <th style="border: 1px solid #ccc; padding: 8px;">Day</th>
+      <th style="border: 1px solid #ccc; padding: 8px;">Morning<br>(8 AM – 12 PM)</th>
+      <th style="border: 1px solid #ccc; padding: 8px;">Afternoon<br>(12 PM – 4 PM)</th>
+      <th style="border: 1px solid #ccc; padding: 8px;">Evening<br>(4 PM – 8 PM)</th>
+      <th style="border: 1px solid #ccc; padding: 8px;">Preferred Day Off</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr>
+      <td style="border: 1px solid #ccc; padding: 8px;">Monday</td>
+      <td style="border: 1px solid #ccc; padding: 8px; text-align: center;"><input type="checkbox" name="Monday Morning"></td>
+      <td style="border: 1px solid #ccc; padding: 8px; text-align: center;"><input type="checkbox" name="Monday Afternoon"></td>
+      <td style="border: 1px solid #ccc; padding: 8px; text-align: center;"><input type="checkbox" name="Monday Evening"></td>
+      <td style="border: 1px solid #ccc; padding: 8px; text-align: center;"><input type="checkbox" name="Monday Off"></td>
+    </tr>
+    
+    <tr>
+      <td style="border: 1px solid #ccc; padding: 8px;">Tuesday</td>
+      <td style="border: 1px solid #ccc; padding: 8px; text-align: center;"><input type="checkbox" name="Tuesday Morning"></td>
+      <td style="border: 1px solid #ccc; padding: 8px; text-align: center;"><input type="checkbox" name="Tuesday Afternoon"></td>
+      <td style="border: 1px solid #ccc; padding: 8px; text-align: center;"><input type="checkbox" name="Tuesday Evening"></td>
+      <td style="border: 1px solid #ccc; padding: 8px; text-align: center;"><input type="checkbox" name="Tuesday Off"></td>
+    </tr>
+    
+    <tr>
+      <td style="border: 1px solid #ccc; padding: 8px;">Wednesday</td>
+      <td style="border: 1px solid #ccc; padding: 8px; text-align: center;"><input type="checkbox" name="Wednesday Morning"></td>
+      <td style="border: 1px solid #ccc; padding: 8px; text-align: center;"><input type="checkbox" name="Wednesday Afternoon"></td>
+      <td style="border: 1px solid #ccc; padding: 8px; text-align: center;"><input type="checkbox" name="Wednesday Evening"></td>
+      <td style="border: 1px solid #ccc; padding: 8px; text-align: center;"><input type="checkbox" name="Wednesday Off"></td>
+    </tr>
+    
+    <tr>
+      <td style="border: 1px solid #ccc; padding: 8px;">Thursday</td>
+      <td style="border: 1px solid #ccc; padding: 8px; text-align: center;"><input type="checkbox" name="Thursday Morning"></td>
+      <td style="border: 1px solid #ccc; padding: 8px; text-align: center;"><input type="checkbox" name="Thursday Afternoon"></td>
+      <td style="border: 1px solid #ccc; padding: 8px; text-align: center;"><input type="checkbox" name="Thursday Evening"></td>
+      <td style="border: 1px solid #ccc; padding: 8px; text-align: center;"><input type="checkbox" name="Thursday Off"></td>
+    </tr>
+    
+    <tr>
+      <td style="border: 1px solid #ccc; padding: 8px;">Friday</td>
+      <td style="border: 1px solid #ccc; padding: 8px; text-align: center;"><input type="checkbox" name="Friday Morning"></td>
+      <td style="border: 1px solid #ccc; padding: 8px; text-align: center;"><input type="checkbox" name="Friday Afternoon"></td>
+      <td style="border: 1px solid #ccc; padding: 8px; text-align: center;"><input type="checkbox" name="Friday Evening"></td>
+      <td style="border: 1px solid #ccc; padding: 8px; text-align: center;"><input type="checkbox" name="Friday Off"></td>
+    </tr>
+    
+    <tr>
+      <td style="border: 1px solid #ccc; padding: 8px;">Saturday</td>
+      <td style="border: 1px solid #ccc; padding: 8px; text-align: center;"><input type="checkbox" name="Saturday Morning"></td>
+      <td style="border: 1px solid #ccc; padding: 8px; text-align: center;"><input type="checkbox" name="Saturday Afternoon"></td>
+      <td style="border: 1px solid #ccc; padding: 8px; text-align: center;"><input type="checkbox" name="Saturday Evening"></td>
+      <td style="border: 1px solid #ccc; padding: 8px; text-align: center;"><input type="checkbox" name="Saturday Off"></td>
+    </tr>
+    
+    <tr>
+      <td style="border: 1px solid #ccc; padding: 8px;">Sunday</td>
+      <td style="border: 1px solid #ccc; padding: 8px; text-align: center;"><input type="checkbox" name="Sunday Morning"></td>
+      <td style="border: 1px solid #ccc; padding: 8px; text-align: center;"><input type="checkbox" name="Sunday Afternoon"></td>
+      <td style="border: 1px solid #ccc; padding: 8px; text-align: center;"><input type="checkbox" name="Sunday Evening"></td>
+      <td style="border: 1px solid #ccc; padding: 8px; text-align: center;"><input type="checkbox" name="Sunday Off"></td>
+    </tr>
+    
+  </tbody>
+</table>
+
+
+      <label for="referral">How did you hear about us?</label>
+      <input type="text" id="referral" name="Referral">
+
+      <label for="languages">Languages Spoken</label>
+      <input type="text" id="languages" name="Languages Spoken">
+
+      <label for="contact">Preferred Method of Contact</label>
+      <select id="contact" name="Preferred Contact">
+        <option value="">-- Please Select --</option>
+        <option value="Email">Email</option>
+        <option value="Phone">Phone</option>
+        <option value="Either">Either</option>
+      </select>
+
+      
+<div class="terms">
+  <strong>Terms & Agreement:</strong>
+  <p>
+    I understand that this is a partnership opportunity and not an offer of employment. I acknowledge that partnerships may be terminated at any time at the discretion of The Modern Notary. I agree to represent The Modern Notary with professionalism and adhere to all applicable state notary laws. I acknowledge that all fees and commissions will be paid according to the terms set forth by The Modern Notary, with partners receiving up to 75% commission on completed notarial work and 100% of travel fees. Those not yet commissioned may apply and receive assistance and their first set of supplies, with 60% commission for the first year and 100% of travel fees. I agree not to share access to The Modern Notary's booking platform, email domain, or marketing assets with unauthorized parties. Partners are responsible for maintaining their own Errors & Omissions (E&O) insurance, which is highly recommended. All partners are expected to operate within a 30-mile radius of Federal Heights, CO 80260.
+  </p>
+  <label><input type="checkbox" name="Agreement" required> I agree to the terms and conditions stated above.</label>
+</div>
+
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </div>
+</body>
+</html>
